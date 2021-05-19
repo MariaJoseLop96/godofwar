@@ -35,13 +35,13 @@ img{ width: 100%;
 
 .tamaño{
 
-    height: 80%;
-      width: 80%;
+    height: 500px;
+      width: 70%;
       margin: auto;
 }
 
 .contenido{
-    height: 100px;;
+    height: 850px;
 }
 
 ul{
@@ -166,8 +166,16 @@ ul ul li{  display: block;
 p{color: aqua;}
 form{color: white;}
 
-footer{color: aqua;
-background: black;}
+footer{
+height: 225px;
+color: aqua;
+background: black;
+font-family: sans-serif;
+font-size: 25px;
+text-align: center;
+
+
+}
 
 
 @media only screen and (max-width: 768){

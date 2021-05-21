@@ -10,6 +10,7 @@
     background-image: url("../imagenes/fondogodofwar.jpg");
 }
 
+
 /*BANER HEADER*/
 
 .tamañoBaner{
@@ -23,6 +24,7 @@
 .menu{
     background-color: rgb(190, 46, 41);
     height: 35px;
+    margin-bottom: 20px;
     
    
         
@@ -30,6 +32,7 @@
         margin: 0;
         padding: 0;
         display: flex;
+        flex-wrap: wrap;
         flex-direction: row;
         justify-content: space-evenly;
          list-style-type: none;
@@ -51,12 +54,29 @@
 
 
 }
-  
 
-.h2{
-    color:rgb(238, 15, 15);
-    font-family: 'New Rocker', cursive;
+.menu__lista li:hover a{
+    color: white !important;
 }
+
+/*card INDEX*/
+.card {
+    position: relative;
+    display: flex;
+    /* flex-direction: column; */
+    min-width: 0;
+    word-wrap: break-word;
+    /* background-color: #fff; */
+    border-radius: .25rem;
+    width: auto;
+    height: auto;
+    color: aqua;
+    background-color: transparent;  
+    font-family: 'New Rocker', cursive;
+    font-size: 20px;
+}
+
+
 
 /*ARTICULO SECCION NOVEDADES*/
 .articulo{
@@ -64,10 +84,11 @@
     padding: 15px;
 
     &__titulo{
-        color:rgb(100, 15, 238);
+        color:rgba(59, 14, 85, 0.877);
         font-style: italic;
         font-size: 35px;
         text-align: center;
+       
        
     }
 
@@ -81,10 +102,26 @@
     }
 }
 
+.articulo__titulo:hover{
+    animation-name: animacion;
+        animation-duration: 3s;
+        animation-iteration-count: inherit;
+}
+
+@keyframes animacion{
+    0%{ font-size: 35px;}
+
+    50%{ font-size: 45px;}
+
+    100%{font-size: 60%;}
+}
+
+
+
 /*FOOTER DE TODAS LAS SECCIONES*/
 .redesGenerales{
     display: flex;
-    height: 15vh;
+    height: 20vh;
     align-items: center;
     justify-content: center;
     background-color: black;
@@ -119,7 +156,7 @@
 }
 
 .redes-container ul:hover a{
-    filter:blur(2px);
+    color: rgb(120, 120, 218);
 }
 
 .redes-container ul li a:hover{
@@ -140,6 +177,10 @@
     background-color: rgb(49, 49, 161)
 }
 
+.disclaimer{
+    color: white;
+   
+}
 
 .seccionContenido{
     width: 100%;
@@ -161,21 +202,65 @@
 }
 
 $tamaño:40px;
-$colorTitulo: rgb(49, 211, 34) !important;
 
 
 
 
-@mixin estiloTitulares($colorTitulo , $tamaño) {
-    color:$colorTitulo;
+
+@mixin estiloTitulares($tamaño) {
     font-size: $tamaño;
     font-family: 'Times New Roman', Times, serif;
     
 }
 
-.tituloh2{
-    @include estiloTitulares(red,50px)
+
+
+.seccionGaleria{
+    
+    background-color: rgb(0, 0, 0);
+
+}
+
+ 
+.imagen{
+    width: 100%;
+}
+
+.imagen img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.elemento4, .elemento5, .elemento6{
+    height: 100%;
+    
+}
+
+.imagen:nth-child(4){
+    grid-row-start: span 2;
+}
+
+.imagen:nth-child(5){
+    grid-row-start: span 2;
+}
+.imagen:nth-child(6){
+    grid-row-start: span 2;
 }
 
 
+.galeria{
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) ;
+    column-gap: .5rem;
+    row-gap: .5rem;
     
+}
+
+
+
+
+

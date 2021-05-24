@@ -7,7 +7,7 @@
 .margenes {
   background-image: url(../imagenes/fondogodofwar.jpg); }
 
-/*BANER HEADER*/
+/*BANER HEADER TODAS LAS SECCIONES*/
 .tamañoBaner {
   width: 100%;
   height: 525px;
@@ -36,22 +36,24 @@
 .menu__lista li:hover a {
   color: white !important; }
 
+/*INDEX*/
 .introduccion {
   background-image: url(../imagenes/backindex.jpg);
-  background-size: 100% 750px;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
   color: aqua;
   font-family: 'New Rocker', cursive;
   width: 100%;
   text-align: center;
   align-items: center;
   font-size: 30px;
-  height: 750px;
+  height: 100%;
   padding-top: 60px; }
 
-.introduccionFrases {
-  padding-bottom: 100px; }
+.introduccionFrases > p {
+  padding: 10px; }
 
-/*ARTICULO SECCION NOVEDADES*/
+/*ARTICULO SECCION INDEX- HISTORIA- NOVEDADES*/
 .articulo {
   margin: 15px;
   padding: 15px; }
@@ -64,16 +66,16 @@
     font-weight: bold; }
   .articulo__parrafo {
     color: white;
-    font-family: 'cinzel', serif;
+    font-family: 'New Rocker', cursive;
     text-align: justify;
     padding: 25px;
     font-size: 20px; }
   .articulo__parrafoSecuela {
     color: #b88b1a;
-    font-family: 'cinzel', serif;
+    font-family: 'New Rocker', cursive;
     text-align: justify;
     padding: 25px;
-    font-size: 15px;
+    font-size: 22px;
     font-weight: bold; }
   .articulo__tituloVioleta {
     color: #661a66;
@@ -98,6 +100,71 @@
 
 .seccionHistoria {
   background-image: url(../imagenes/fondogodofwar.jpg); }
+
+/* SECCION GALERIA*/
+.seccionGaleria {
+  background-color: black; }
+
+.galeria {
+  width: 100%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: .5rem;
+  row-gap: .5rem;
+  padding-top: 25px; }
+
+.imagen {
+  width: 100%; }
+
+.imagen img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; }
+
+.elemento4, .elemento5, .elemento6 {
+  height: 100%; }
+
+.imagen:nth-child(4) {
+  grid-row-start: span 2; }
+
+.imagen:nth-child(5) {
+  grid-row-start: span 2; }
+
+.imagen:nth-child(6) {
+  grid-row-start: span 2; }
+
+/*SECCION NOVEDADES*/
+.seccionNovedades {
+  background-image: url(../imagenes/fondogodofwar.jpg);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: goldenrod; }
+
+/*seccion formulario*/
+.contenedorFormulario {
+  width: 80%;
+  height: 450px;
+  margin: 0px auto; }
+
+.formulario {
+  margin: auto;
+  margin-top: 50px;
+  padding: 40px;
+  box-sizing: border-box;
+  width: 500px;
+  background-color: black;
+  border-radius: 4px;
+  font-family: 'Calibri';
+  color: white; }
+
+.controles {
+  width: 80%;
+  height: 20px; }
+
+.formulario h4 {
+  font-size: 22px;
+  margin-bottom: 20px; }
 
 /*FOOTER DE TODAS LAS SECCIONES*/
 .redesGenerales {
@@ -149,50 +216,3 @@
 
 .disclaimer {
   color: white; }
-
-.seccionContenido {
-  width: 100%;
-  height: 480px;
-  padding-top: 35px;
-  font-family: sans-serif;
-  font-size: 40px; }
-  .seccionContenido__parrafo {
-    color: aqua; }
-
-.seccionGaleria {
-  background-color: black; }
-
-.galeria {
-  width: 100%;
-  margin: auto;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  column-gap: .5rem;
-  row-gap: .5rem;
-  padding-top: 25px; }
-
-.imagen {
-  width: 100%; }
-
-.imagen img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; }
-
-.elemento4, .elemento5, .elemento6 {
-  height: 100%; }
-
-.imagen:nth-child(4) {
-  grid-row-start: span 2; }
-
-.imagen:nth-child(5) {
-  grid-row-start: span 2; }
-
-.imagen:nth-child(6) {
-  grid-row-start: span 2; }
-
-.seccionNovedades {
-  background-image: url(../imagenes/fondogodofwar.jpg);
-  padding-top: 10px;
-  padding-bottom: 10px;
-  color: goldenrod; }

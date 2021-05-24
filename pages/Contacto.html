@@ -8,16 +8,15 @@
     <meta name="keywords" content="juego, god of war, playstation, contacto"> 
     <link href="https://fonts.googleapis.com/css2?family=New+Rocker&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/09656b316d.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../Estilo.css">
   
     <link rel="stylesheet" href="../css/estilo2.css">
     <title>contacto</title>
 </head>
 <body>
     <div class="margenes">
-        <header>
-            <a href=""><div> <img class="tamañoBaner" src="../imagenes/kratoscortado.jpg" alt=""> </div></a>
-        </header>
+     <header>
+         <div> <img class="tamañoBaner" src="../imagenes/kratoscortado.jpg" alt=""> </div>
+     </header>
 
         <nav class="menu">
           <ul class="menu__lista">
@@ -28,39 +27,32 @@
               <li ><a  class="menu__icono" href="../pages/Contacto.html">Contacto</a> </li>
           </ul>
          </nav>
-   
-         <h2>Contacto</h2>
          
-    <section>
+          <div class="contenedorFormulario">
+            <form class="formulario" action="">
+              <h4>Formulario Registro</h4>
+            <input class="controles" type="text" name="nombres" id="nombres" placeholder="Ingrese su Nombre y Apellido">
      
-     <form action="">
-        <h3>INFORMACION PERSONAL</h3>
-        Nombre y Apellido: <input type="text" placeholder=" Ingrese su nombre">
-        <br>
-        Correo electronico: <input type="email" placeholder="Ingrese su email"> 
-        <br>
-       Sexo: <select name="Sexo" id="">
-                <option value="Mujer">Mujer</option>
-                <option value="Hombre">Hombre</option>
-                <option value="Prefiero no decir">Prefiero no decir</option>
-       </select>
-        <br>
+            <input class="controles" type="email" name="correo" id="correo" placeholder="Ingrese su Correo">
+               <p> ¿Quieres recibir nuestras novedades antes que todos?</p> 
+             <input type="checkbox" name="novedades" id="">
+                
+            <p>Dejanos tu comentario</p>
+            <textarea name="comentario" id="" cols="60" rows="10"> </textarea> 
+  
+            
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Borrar todo">
+            
+  
+            </form>
+          </div>
+          
         
-            <br>
-            <br>
 
-     <legend>Dejanos tu comentario:</legend> 
-       <textarea name="" id="" cols="100" rows="10"> 
-
-       </textarea> 
-        <input type="submit" value="Enviar">
-        <input type="reset" value="Borrar todo">
-
-    </form>
-    </section>
-       -->
-
-
+      </div>
+       
+     
 
 
   <!--FOOTER-->

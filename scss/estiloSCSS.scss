@@ -1,13 +1,12 @@
 *{
-    margin: 0px;
-    padding: 0px;
+    margin: 0%;
+    padding: 0%;
     }
 /*MARGENES TODAS LAS SECCIONES*/
 
 .margenes{
-    margin: 0%;
-    padding: 0%;
-    background-image: url("../imagenes/fondogodofwar.jpg");
+    background-image: url(../imagenes/fondogodofwar.jpg);
+      
 }
 
 
@@ -23,8 +22,8 @@
 /* MENU TODAS LAS SECCIONES */
 .menu{
     background-color: rgb(190, 46, 41);
-    height: 35px;
-    margin-bottom: 20px;
+    
+   
     
    
         
@@ -37,7 +36,7 @@
         justify-content: space-evenly;
          list-style-type: none;
         align-content: center;
-        height: 30px;
+        
 
     }
    
@@ -59,22 +58,23 @@
     color: white !important;
 }
 
-/*card INDEX*/
-.card {
-    position: relative;
-    display: flex;
-    /* flex-direction: column; */
-    min-width: 0;
-    word-wrap: break-word;
-    /* background-color: #fff; */
-    border-radius: .25rem;
-    width: auto;
-    height: auto;
-    color: aqua;
-    background-color: transparent;  
-    font-family: 'New Rocker', cursive;
-    font-size: 20px;
+.introduccion{
+    background-image: url(../imagenes/backindex.jpg);
+    background-size: 100% 750px;
+     color: aqua;
+    font-family:'New Rocker', cursive;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    font-size: 30px;
+    height: 750px;
+    padding-top: 60px;
 }
+
+.introduccionFrases{
+    padding-bottom: 100px;
+}
+
 
 
 
@@ -84,10 +84,13 @@
     padding: 15px;
 
     &__titulo{
-        color:rgba(59, 14, 85, 0.877);
+        color:aqua;
         font-style: italic;
-        font-size: 35px;
+        font-size: 40px;
         text-align: center;
+        padding-top: 45px;
+        font-weight: bold;
+
        
        
     }
@@ -97,10 +100,48 @@
         font-family:'cinzel', serif;
         text-align: justify;
         padding: 25px;
+        font-size: 20px;
         
 
     }
+
+    &__parrafoSecuela{
+        color:rgb(184, 139, 26);
+        font-family:'cinzel', serif;
+        text-align: justify;
+        padding: 25px;
+        font-size: 15px;
+        font-weight: bold;
+        
+        
+
+    }
+
+    
+
+    &__tituloVioleta{
+        color:rgb(102, 26, 102);
+        font-style: italic;
+        font-size: 40px;
+        text-align: center;
+        padding-top: 45px;
+        font-weight: bold;
+
+       
+       
+    }
+
+
+
+
+
+
+
+
+
 }
+
+
 
 .articulo__titulo:hover{
     animation-name: animacion;
@@ -116,7 +157,10 @@
     100%{font-size: 60%;}
 }
 
-
+.seccionHistoria{
+    background-image: url(../imagenes/fondogodofwar.jpg);
+  
+}
 
 /*FOOTER DE TODAS LAS SECCIONES*/
 .redesGenerales{
@@ -195,16 +239,8 @@
 
 }
 
-.fantasmaEsparta{
-    width: 300px;
-    height: 325px;
-    padding-left: 650px;
-}
 
 $tamaño:40px;
-
-
-
 
 
 @mixin estiloTitulares($tamaño) {
@@ -215,12 +251,26 @@ $tamaño:40px;
 
 
 
+
+
 .seccionGaleria{
     
     background-color: rgb(0, 0, 0);
-
+    
+   
 }
 
+
+.galeria{
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) ;
+    column-gap: .5rem;
+    row-gap: .5rem;
+    padding-top: 25px;
+    
+}
  
 .imagen{
     width: 100%;
@@ -250,16 +300,13 @@ $tamaño:40px;
 }
 
 
-.galeria{
-    width: 100%;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr) ;
-    column-gap: .5rem;
-    row-gap: .5rem;
-    
-}
 
+.seccionNovedades{
+    background-image: url(../imagenes/fondogodofwar.jpg);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: goldenrod;
+}
 
 
 

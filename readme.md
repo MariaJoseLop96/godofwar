@@ -15,5 +15,31 @@ seccion novedades se le agrego un hover al titulo
 se modifico la tipografia en las secciones que faltaban
 (persiste problema de hacer menu responsive)
 
-21/5/21
+21/5/21 al 24/5/21
+Se modifico index completamente, eliminacion de la etiqueta card
+cambios en la tipografia 
+fondo de pantalla
+En todas las secciones se elimino la etiqueta a del Header
+Modificacion seccion historia:
+resumen de los 4 juegos principales
+se realizo cambios en la tipografia
+fondo de pantalla
+titulos
+Creacion de nueva clase de etiqueta para los parrafos
+
+Modificacion seccion Novedades
+se busco novedades del nuevo juego de god of war
+se implemento las mismas carecteristicas que en la seccion novedades
+
+Modificacion seccion Galeria:
+Se establecio pading
+Se cambiaron algunas fotos
+
+Caracteristicas generales:
+Habia un error en el nav que hacia que no sea responsive, se modifico y ahora todo el trabajo es resposive.
+
+Seccion contacto:
+Probando etiquetas
+
+
 

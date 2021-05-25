@@ -44,6 +44,6 @@ Probando etiquetas
 24/5/21
 MODIFICACION INDEX
 SE REALIZO MEDIA QUERY
-SE REALIZO FARMILARIO
+Se realizo formulario
 
 

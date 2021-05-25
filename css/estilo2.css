@@ -3,7 +3,7 @@
   margin: 0%;
   padding: 0%; }
 
-/*MARGENES TODAS LAS SECCIONES*/
+/*CLASE MARGENES BACKGROUND */
 .margenes {
   background-image: url(../imagenes/fondogodofwar.jpg); }
 
@@ -143,28 +143,47 @@
 
 /*seccion formulario*/
 .contenedorFormulario {
-  width: 80%;
-  height: 450px;
+  width: 60%;
+  height: 458px;
   margin: 0px auto; }
 
 .formulario {
-  margin: auto;
   margin-top: 50px;
   padding: 40px;
   box-sizing: border-box;
-  width: 500px;
+  width: 65%;
   background-color: black;
   border-radius: 4px;
   font-family: 'Calibri';
-  color: white; }
+  color: white;
+  display: flex;
+  flex-direction: column;
+  margin-left: 15%;
+  height: 430px; }
+
+.formulario > * {
+  margin-bottom: 10px; }
 
 .controles {
-  width: 80%;
-  height: 20px; }
+  width: 60%;
+  height: 20px;
+  margin-bottom: 10px;
+  color: blue;
+  padding: 8px; }
+
+.comentario {
+  height: 150px;
+  width: 85%; }
+
+.botones {
+  width: 15%; }
 
 .formulario h4 {
   font-size: 22px;
   margin-bottom: 20px; }
+
+.checkbox {
+  padding-left: 10%; }
 
 /*FOOTER DE TODAS LAS SECCIONES*/
 .redesGenerales {
@@ -216,3 +235,90 @@
 
 .disclaimer {
   color: white; }
+
+/*RESPONSIVE PARA TABLET*/
+@media (max-width: 1117px) {
+  .galeria {
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: .5rem;
+    row-gap: .5rem;
+    padding-top: 25px; }
+  .contenedorFormulario {
+    width: 100%;
+    height: 458px; }
+  .formulario {
+    margin-top: 50px;
+    padding: 40px;
+    box-sizing: border-box;
+    width: 65%;
+    background-color: black;
+    border-radius: 4px;
+    font-family: 'Calibri';
+    color: white;
+    display: flex;
+    flex-direction: column;
+    margin-left: 15%;
+    height: 430px; } }
+
+/*RESPOSIVE PARA CELULAR*/
+@media (max-width: 700px) {
+  .galeria {
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    column-gap: .5rem;
+    row-gap: .5rem;
+    padding-top: 25px; }
+  .contenedorFormulario {
+    width: 100%;
+    height: 475px; }
+  .controles {
+    width: 80%;
+    height: 20px;
+    color: blue;
+    padding: 8px; }
+  .comentario {
+    height: 255px;
+    width: 95%; }
+  .botones {
+    width: 25%; } }
+
+@media (max-width: 415px) {
+  .galeria {
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    column-gap: .5rem;
+    row-gap: .5rem;
+    padding-top: 25px; }
+  .contenedorFormulario {
+    width: 100%;
+    height: 476px; }
+  .formulario {
+    margin-top: 40px;
+    padding: 15px;
+    box-sizing: border-box;
+    width: 70%;
+    background-color: black;
+    border-radius: 4px;
+    font-family: 'Calibri';
+    color: white;
+    display: flex;
+    flex-direction: column;
+    margin-left: 15%;
+    height: 450px; }
+  .controles {
+    width: 80%;
+    height: 20px;
+    color: blue;
+    padding: 8px; }
+  .comentario {
+    height: 300px;
+    width: 95%; }
+  .botones {
+    width: 25%; } }

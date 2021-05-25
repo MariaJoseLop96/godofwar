@@ -41,5 +41,9 @@ Habia un error en el nav que hacia que no sea responsive, se modifico y ahora to
 Seccion contacto:
 Probando etiquetas
 
+24/5/21
+MODIFICACION INDEX
+SE REALIZO MEDIA QUERY
+SE REALIZO FARMILARIO
 
 

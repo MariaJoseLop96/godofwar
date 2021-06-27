@@ -1,3 +1,5 @@
+
+// prueba ecommerce
 class productos{
     constructor(nombre, precio, stock){
         this.nombre = nombre;

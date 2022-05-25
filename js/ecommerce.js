@@ -1,5 +1,5 @@
 
-// prueba ecommerce
+// /prueba ecommerce
 class productos{
     constructor(nombre, precio, stock){
         this.nombre = nombre;
@@ -11,7 +11,7 @@ class productos{
 
  }
 
-
+/// dejar 3 productos solamente
  const producto1 = new productos ("remera", 1200, 13);
  const producto2 = new productos ("pantalon", 1500, 12);
  const producto3 = new productos ("zapatillas", 1400, 15);
@@ -36,3 +36,9 @@ for(let i = 0; i < inventario.length; i++){
 }
 
 console.table(inventario)
+/// 
+function suma (producto1,  producto2 , producto3){
+    return producto1 + producto2 + producto3;
+}
+
+let resultado = suma(producto1 + producto2 + producto3 + producto4)
